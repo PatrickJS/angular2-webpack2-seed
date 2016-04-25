@@ -81,7 +81,7 @@ var webpackConfig = {
 var defaultConfig = {
   devtool: 'source-map',
   // devtool: 'cheap-module-eval-source-map',
-  cache: true,
+  cache: false,
 
   output: {
     filename: '[name].[hash].bundle.js',

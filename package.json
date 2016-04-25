@@ -12,18 +12,20 @@
       "build:prod": "node node_modules/webpack/bin/webpack.js --progress --color --display-error-details --display-cached --display-reasons",
 
     "watch": "npm run build -- --watch",
+      "watch:prod": "npm run build:prod -- --watch",
 
-    "server": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "server": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --open --inline",
       "server:prod": "http-server dist --cors",
 
-    "start": "npm run server"
+    "start": "npm run server",
+      "start:watch": "concurrently 'npm run server:prod' 'npm run watch:prod'"
   },
   "contributors": [
     "PatrickJS <github@gdi2290.com>"
   ],
   "license": "MIT",
   "devDependencies": {
-    "awesome-typescript-loader": "~0.16.2",
+    "concurrently": "^2.0.0",
     "es6-promise": "3.0.2",
     "es6-shim": "0.35.0",
     "html-webpack-plugin": "^2.16.0",
