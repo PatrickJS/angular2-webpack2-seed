@@ -1,0 +1,69 @@
+{
+  "name": "angular2-webpack2-seed",
+  "version": "2.0.0",
+  "description": "A simple starter Angular2 project",
+  "scripts": {
+
+    "typings-install": "node node_modules/typings/dist/bin.js install",
+      "postinstall": "npm run typings-install",
+
+    "build": "node node_modules/webpack/bin/webpack.js --inline --color --progress --display-error-details --display-cached",
+        "prebuild:prod": "rimraf dist",
+      "build:prod": "node node_modules/webpack/bin/webpack.js --progress --color --display-error-details --display-cached --display-reasons",
+
+    "watch": "npm run build -- --watch",
+
+    "server": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+      "server:prod": "http-server dist --cors",
+
+    "start": "npm run server"
+  },
+  "contributors": [
+    "PatrickJS <github@gdi2290.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "awesome-typescript-loader": "~0.16.2",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.35.0",
+    "html-webpack-plugin": "^2.16.0",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "0.1.2",
+    "rimraf": "^2.5.2",
+    "source-map-loader": "^0.1.5",
+    "typescript": "^1.9.0-dev.20160409",
+    "typings": "~0.8.1",
+    "webpack": "2.1.0-beta.6",
+    "webpack-dev-server": "2.0.0-beta",
+    "webpack-md5-hash": "0.0.5",
+    "webpack-merge": "^0.8.4"
+  },
+  "dependencies": {
+    "@igorminar/http": "~0.0.3",
+    "@igorminar/platform-browser": "~0.0.3",
+    "@igorminar/platform-server": "~0.0.3",
+    "@igorminar/router": "~0.0.3",
+    "compression-webpack-plugin": "^0.3.1",
+    "core-js": "^2.2.0",
+    "http-server": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "rxjs": "~5.0.0-beta.2",
+    "ts-helpers": "^1.1.0",
+    "ts-loader": "^0.8.2",
+    "zone.js": "~0.6.12"
+  },
+  "keywords": [
+    "Angular2",
+    "angular2-seed",
+    "official angular 2 seed",
+    "official angular2 seed"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular2-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular2-seed/issues"
+  },
+  "homepage": "https://github.com/angular/angular2-seed#readme"
+}
