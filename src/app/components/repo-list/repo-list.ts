@@ -1,7 +1,7 @@
-import {Component} from '@igorminar/core';
+import {Component} from '@angular/core';
 import {Github} from '../../services/github';
 import {Observable} from 'rxjs/Observable';
-import {RouteParams, ROUTER_DIRECTIVES} from '@igorminar/router';
+import {RouteParams, ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 
 @Component({
   selector: 'repo-list',
@@ -14,7 +14,7 @@ import {RouteParams, ROUTER_DIRECTIVES} from '@igorminar/router';
   pipes: []
 })
 export class RepoList {
-  repos: Observable<any>
+  repos: Observable<any>;
   constructor(public github: Github, public params: RouteParams) {}
 
   ngOnInit() {
