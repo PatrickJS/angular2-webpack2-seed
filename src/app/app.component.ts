@@ -1,5 +1,5 @@
-import {Component} from '@igorminar/core';
-import {Router, RouteConfig, ROUTER_DIRECTIVES} from '@igorminar/router';
+import {Component} from '@angular/core';
+import {Router, RouteConfig, ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 
 import {Home} from './components/home/home';
 import {About} from './components/about/about';

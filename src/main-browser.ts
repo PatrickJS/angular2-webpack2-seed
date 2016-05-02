@@ -1,8 +1,8 @@
-import {Component, enableProdMode} from '@igorminar/core';
-import {ROUTER_PROVIDERS} from '@igorminar/router';
-import {HTTP_PROVIDERS} from '@igorminar/http';
-import {enableDebugTools} from '@igorminar/platform-browser';
-import {bootstrap} from '@igorminar/platform-browser-dynamic';
+import {Component, enableProdMode} from '@angular/core';
+import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {HTTP_PROVIDERS} from '@angular/http';
+import {enableDebugTools} from '@angular/platform-browser';
+import {bootstrap} from '@angular/platform-browser-dynamic';
 
 import {App} from './app/index';
 

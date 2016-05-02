@@ -98,7 +98,7 @@ var defaultConfig = {
           // these packages have problems with their sourcemaps
           path.join(__dirname, 'node_modules', 'rxjs'),
           path.join(__dirname, 'node_modules', '@angular2-material'),
-          path.join(__dirname, 'node_modules', '@igorminar'),
+          path.join(__dirname, 'node_modules', '@angular'),
         ]
       }
     ],

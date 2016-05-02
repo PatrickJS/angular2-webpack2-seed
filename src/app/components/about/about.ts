@@ -1,5 +1,5 @@
-import {Component} from '@igorminar/core';
-import {Http} from '@igorminar/http';
+import {Component} from '@angular/core';
+import {Http} from '@angular/http';
 
 
 @Component({

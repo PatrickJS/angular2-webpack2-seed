@@ -1,6 +1,6 @@
-import {Component} from '@igorminar/core';
-import {RouteParams, ROUTER_DIRECTIVES} from '@igorminar/router';
-import {Http} from '@igorminar/http';
+import {Component} from '@angular/core';
+import {RouteParams, ROUTER_DIRECTIVES} from '@angular/router-deprecated';
+import {Http} from '@angular/http';
 import {Github} from '../../services/github';
 
 @Component({
